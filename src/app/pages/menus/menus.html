@@ -1,0 +1,26 @@
+<header class="header">
+	<div class="selected_menu">Выбранное меню: {{selectedMenu?.name || 'None'}}</div>
+	<div class="items_count">Кол-во выбранных элементов: {{selectedItems.length}}</div>
+	<div class="items_sum">Сумма элементов: {{total}}</div>
+</header>
+<main>
+	<section class="hero">
+		<div class="menus">
+			<h2>Choose a menu:</h2>
+			<div *ngFor="let menu of menus">
+			  <button (click)="chooseMenu(menu)">{{menu.name}}</button>
+			</div>
+		</div>
+		<div class="items">
+			<div *ngIf="selectedMenu">
+			  <h3>Items in {{selectedMenu.name}}:</h3>
+			  <div *ngFor="let item of selectedMenu.items">
+			    <label>
+			      <input type="checkbox" (change)="toggleItem(item, $event)">
+			      {{item.name}} ({{item.value}})
+			    </label>
+			  </div>
+			</div>	
+		</div>
+	</section>
+</main>

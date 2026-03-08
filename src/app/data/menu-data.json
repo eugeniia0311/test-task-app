@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Menu 1",
+    "items": [
+        { "name": "Item 1", "value": 10 },
+        { "name": "Item 2", "value": 55 },
+        { "name": "Item 3", "value": 16 },
+        { "name": "Item 4", "value": 43 }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Menu 2",
+    "items": [
+        { "name": "Item 1", "value": 5 },
+        { "name": "Item 2", "value": 4 },
+        { "name": "Item 3", "value": 33 },
+        { "name": "Item 4", "value": 81 }
+    ]
+  }
+]
